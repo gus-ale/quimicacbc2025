@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de QUÍMICA-CBC</title>
+    <style>
+        body {
+            background-color: #151437;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Estilos del encabezado */
+        .header {
+            background-color: #000000; /* Gris medio */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header img {
+            width: 140px;
+            heigth :130px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #FFA500; /* Naranja */
+        }
+
+        /* Estilos del menú */
+        .menu {
+            float: left;
+            width: 300px;
+            margin-right: 20px;
+            background-color: #333; /* Gris oscuro */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu h2 {
+            color: #FFA500; /* Naranja */
+            text-align: center;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            background-color: #4D4D4D; /* Gris medio */
+            color: white;
+            text-decoration: none;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            background-color: #FFA500; /* Naranja */
+        }
+
+        .submenu {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .submenu a {
+            background-color: #B3B3B3; /* Gris claro */
+            color: #333;
+            font-weight: normal;
+        }
+
+        /* Estilo para el contenedor del video */
+        #video-container {
+            margin-top: 10px;
+            margin-left: 320px;
+            text-align: center;
+            background-color: #494854; /* Gris suave */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #FFA500; /* Naranja */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #FFA500;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Descripción del video */
+        .video-description {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #FFB200;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con imagen y texto -->
+    <div class="header">
+        <img src="biofisicap.jpg" alt="Logo">
+        <h1>Bienvenido al Curso de Química CBC : </h1>
+        <p></p>
+        <h1 style= " color: #38F80D;"> </h1>
+        
+    </div>
+
+    <div class="menu">
+        <h2>MENU PRINCIPAL</h2>
+        <!-- Temas del curso -->
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema1')">SISTEMAS MATERIALES</a>
+        <div id="tema1" class="submenu">
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Estados de agregación de la materia</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Sustancias Simples y Compuestas</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Sistemas Materiales</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Métodos de Separación de Fases</a>
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Composición Centesimal</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Fórmula Mínima y Molecular</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos III</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema2')">TABLA PERIODICA</a>
+        <div id="tema2" class="submenu">
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Composición Atómica</a>
+            <a href="#" onclick="loadVideo('ttypVaawirA', '')">Magnitudes Atómicas</a>
+            <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Estructura Atómica </a>
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Regla del Octeto</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Propiedades Periódicas</a>
+               <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos III</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+        
+        </div>
+		
+        
+        
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema3')">UNIONES QUÍMICAS</a>
+        <div id="tema3" class="submenu">
+            <a href="#" onclick="loadVideo('-E_NRxCg7zY', '')">Uniones Iónica</a>
+            
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Uniones Metálicas</a>
+             <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Uniones Covalentes  </a>
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Trepev</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Fuerzas Intermoleculares</a>
+               <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos III</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+             
+        </div>
+        
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema4')">NOMENCLATURA</a>
+        <div id="tema4" class="submenu">
+            <a href="#" onclick="loadVideo('-E_NRxCg7zY', '')">Número de Oxidación</a>
+            
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Óxidos</a>
+             <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Hidróxidos </a>
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Ácidos</a></a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Sales</a>
+             
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Ejercicios de Parciales I</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Ejercicios de Parciales II</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Ejercicios de Parciales III</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Ejercicios de Parciales IV</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Ejercicios de Parciales V</a>
+            
+        </div>
+        
+        
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema5')">GASES IDEALES</a>
+        <div id="tema5" class="submenu">
+            <a href="#" onclick="loadVideo('-E_NRxCg7zY', '')">Gases Ideales</a>
+            
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Leyes de los Gases Ideales</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Ejemplos I/a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Ejemplos III</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Mezcla de Gases</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Parciales II</a>
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Parciales III</a>
+        </div>
+        
+        
+        
+		<a href="javascript:void(0)" onclick="toggleSubmenu('tema6')">SOLUCIONES</a>
+        <div id="tema6" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Soluciones</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Soluciones Insaturadas y Saturadas</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Formas de Expresar la Concentración</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos III</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Diluciones</a>
+             <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos III</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+        </div>
+        
+        	<a href="javascript:void(0)" onclick="toggleSubmenu('tema7')">REACCIONES QUÍMICAS</a>
+        <div id="tema7" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Reacción Química</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Tipos de Reacciones</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Reacciones Redox</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Estequiometría</a>
+             <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos III</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+        </div>
+        
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema8')">CINÉTICA QUÍMICA</a>
+        <div id="tema8" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Velocidad de las reacciones</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Ley de Velocidad</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Energía de Activación</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+        </div>
+        
+        	<a href="javascript:void(0)" onclick="toggleSubmenu('tema9')">EQUILIBRIO QUÍMICO</a>
+        <div id="tema9" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Reacciones Reversibles e Irreversibles</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Equilibrio Químico</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos III</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Principios de Le Chatellier</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Ejemplos III</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Relación entre Kc y Kp</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Principios de Le Chatellier</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+        </div>
+        
+        	
+        
+        
+        
+        	<a href="javascript:void(0)" onclick="toggleSubmenu('tema10')">EQUILIBRIO ÁCIDO-BASE</a>
+        <div id="tema10" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Ácidos y Bases. pH y pOH</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Ácidos y Bases Fuertes</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Ácidos y Bases Débiles</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Hidrólisis de Sales</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos I</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejemplos III</a>
+            <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Sistemas Reguladores de pH</a>
+              <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Parciales I</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Parciales II</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Parciales III</a>
+            
+        </div>
+        
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema11')">TEMAS EXTRAS</a>
+        <div id="tema11" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Nomenclatura Orgánica I</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Nomenclatura Orgánica II</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Isomería Estructural</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Estereoisomería</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Radioactividad</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Nociones de termoquímica<a>
+          
+        </div>
+        	
+        <!-- Más temas aquí... -->
+
+    </div>
+
+    <div id="video-container">
+        <h2><--- Seleccione el video del menú</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID?controls=0" frameborder="0" allowfullscreen></iframe>
+        <p class="video-description"></p>
+    </div>
+
+    <script>
+        // Función para mostrar/ocultar submenús y cerrar los demás
+        function toggleSubmenu(id) {
+            var allSubmenus = document.getElementsByClassName('submenu');
+            
+            // Cerrar todos los submenús
+            for (var i = 0; i < allSubmenus.length; i++) {
+                if (allSubmenus[i].id !== id) {
+                    allSubmenus[i].style.display = 'none';
+                }
+            }
+            
+            // Alternar el submenú clickeado
+            var submenu = document.getElementById(id);
+            submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+        }
+
+        // Función para cargar el video en el contenedor con descripción
+        function loadVideo(videoId, description) {
+            var videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `
+                <h2>Video del Curso de MATEMATICA 51</h2>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                <p class="video-description">${description}</p>`;
+        }
+    </script>
+
+</body>
+</html>
+
+
